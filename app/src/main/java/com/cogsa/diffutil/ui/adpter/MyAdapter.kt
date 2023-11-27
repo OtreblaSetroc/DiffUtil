@@ -54,7 +54,8 @@ internal class MyAdapter(private val presenter: MyPresenter) :
                 presenter.areContentsTheSame(oldItemPosition, newItemPosition)
 
         }
-        DiffUtil.calculateDiff(diffUtil)
+        val result = DiffUtil.calculateDiff(diffUtil)
+        result.dispatchUpdatesTo(this)
     }
 
     private fun createHeaderViewHolder(parent: ViewGroup): MyHeaderViewHolder {
