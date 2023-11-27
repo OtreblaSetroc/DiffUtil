@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DiffUtil</string>
+    <string name="card_description">**** %s</string>
+    <string name="card_value">$ %f</string>
+</resources>
